@@ -1,0 +1,55 @@
+{
+	"name": "sequence-matching",
+	"version": "1.0.0",
+	"description": "A library for matching sequences of consecutive elements in an array by using a pattern.",
+	"author": "Lazhar Ichir",
+	"license": "GNU General Public License v3.0",
+	"main": "dist/src/index.js",
+	"types": "dist/src/index.d.ts",
+	"files": [
+		"dist/**/*"
+	],
+	"publishConfig": {
+		"registry": "https://registry.npmjs.org"
+	},
+	"homepage": "https://github.com/lazharichir/sequence-matching#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/lazharichir/sequence-matching.git"
+	},
+	"bugs": {
+		"url": "https://github.com/lazharichir/sequence-matching/issues"
+	},
+	"scripts": {
+		"test": "jest",
+		"test:coverage": "jest --verbose --coverage",
+		"build": "tsc",
+		"lint": "eslint 'src/**/*.ts'",
+		"lint:fix": "eslint --fix 'src/**/*.ts'",
+		"clean": "rimraf ./dist && rimraf ./coverage",
+		"prepublishOnly": "npm run clean && npm run lint && npm run test && npm run build"
+	},
+	"devDependencies": {
+		"@types/jest": "^26.0.14",
+		"@types/pino": "^6.3.2",
+		"@typescript-eslint/eslint-plugin": "^4.4.0",
+		"@typescript-eslint/parser": "^4.4.0",
+		"eslint": "^7.10.0",
+		"eslint-config-prettier": "^6.12.0",
+		"eslint-plugin-import": "^2.22.1",
+		"eslint-plugin-prettier": "^3.1.4",
+		"jest": "^26.4.2",
+		"prettier": "^2.1.2",
+		"rimraf": "^3.0.2",
+		"ts-jest": "^26.4.1",
+		"typescript": "^4.0.3"
+	},
+	"keywords": [
+		"pattern matching",
+		"sequence matcher",
+		"sequence matching",
+		"rule-based matcher",
+		"token sequence matcher",
+		"array matcher"
+	]
+}
