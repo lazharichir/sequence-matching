@@ -1,13 +1,13 @@
 {
 	"name": "sequence-matching",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "A library for matching sequences of consecutive elements in an array by using a pattern.",
 	"author": "Lazhar Ichir",
 	"license": "GNU General Public License v3.0",
 	"main": "dist/src/index.js",
 	"types": "dist/src/index.d.ts",
 	"files": [
-		"dist/**/*"
+		"dist/src/**/*"
 	],
 	"publishConfig": {
 		"registry": "https://registry.npmjs.org"
